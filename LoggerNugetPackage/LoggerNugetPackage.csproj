@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>LoggerNugetPackage</RootNamespace>
+    <PackageId>LoggerNugetPackage</PackageId>
+    <Version>1.0.2</Version>
+    <Authors>monalisa</Authors>
+    <Company>GitHub</Company>
+    <PackageDescription>This package adds an Octocat!</PackageDescription>
+    <!--<RepositoryUrl>https://packagestest.github.us/AmrutaKawade/LoggerNugetPackage</RepositoryUrl>-->
+    <!-- https://github.ghe.com/AmrutaKawade/LoggerNugetPackage-->
+    <!-- https://packagestest.github.us/AmrutaKawade/LoggerNugetPackage-->
+    <!--<RepositoryUrl>http://github.localhost/monalisa/LoggerNugetPackage</RepositoryUrl>-->
+    <RepositoryUrl>http://github.com/AmrutaKawade/LoggerNugetPackage</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Logger.cs">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Compile>
+  </ItemGroup>
+</Project>
